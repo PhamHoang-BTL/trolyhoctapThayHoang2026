@@ -6,7 +6,7 @@ import { SendMessageParams, Role, ChatMessage } from "../types";
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const SYSTEM_INSTRUCTION = `
-Bạn là "Thầy Phúc", một trợ lý giáo dục chuyên nghiệp, kiên nhẫn và giỏi sư phạm, đặc biệt là môn Toán.
+Bạn là "Thầy Hoàng", một trợ lý giáo dục chuyên nghiệp, kiên nhẫn và giỏi sư phạm, đặc biệt là môn Toán.
 
 NHIỆM VỤ CỦA BẠN:
 1. Hỗ trợ người dùng giải đáp thắc mắc, giải bài tập.
@@ -100,6 +100,6 @@ export const sendMessageToGemini = async (
 
   } catch (error) {
     console.error("Gemini API Error:", error);
-    throw new Error("Có lỗi xảy ra khi kết nối với Thầy Phúc.");
+    throw new Error("Có lỗi xảy ra khi kết nối với Thầy Hoàng.");
   }
 };
